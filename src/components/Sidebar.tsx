@@ -3,10 +3,12 @@ import { Avatar } from "./Avatar"
 
 import styles from './Sidebar.module.css'
 
+const imageUrl = "https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+
 export function Sidebar() {
   return (
     <aside className={styles.sidebar}>
-      <img className={styles.cover} src="https://grendenecombr.sharepoint.com/sites/NovaIntranet/Galeria/Dev%20Day%20Grendene/_DSC1165.jpg" alt="" />
+      <img className={styles.cover} src={imageUrl} alt="" />
 
       <div className={styles.profile}>
         <Avatar src="https://github.com/luancardosoti.png" />
